@@ -1,0 +1,125 @@
+/* ******************** body **************** */
+body {
+    background-color: whitesmoke;
+}
+
+/* ******************** header **************** */
+header {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;   
+}
+
+/* logo */
+header .logo {
+    flex: 1;
+}
+ 
+/* heading*/
+header .intro {
+    flex: 3; 
+}
+
+/* sub-heading */
+header #desc{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* change layout of the main secion when width less than 800px */
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+
+/* ******************** nav bar **************** */
+nav {
+    overflow: hidden;
+    background-color: #3399FF;
+}
+
+/* elements in the navbar */
+nav a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+
+/* elements in the navbar change when being hovered */
+nav a:hover {
+    background-color: rgb(250, 247, 247);
+    color: black;
+}
+
+/* ******************** main content **************** */
+.main{
+    margin: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.main .content{
+    flex: 1;
+}
+
+.main .brandeis_campus{
+    flex: 1;
+}
+
+.universityName {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .main{
+        flex-direction: column;
+    }
+}
+
+/* ******************** footer **************** */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightslategray;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    padding-left: 40px;
+}
+
+.icons {
+    padding-right: 40px;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p {
+        padding-left: 0;
+    }
+    
+    .icons {
+        padding-right: 0;
+    }
+}
